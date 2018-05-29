@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang='pl'>
+  <meta charset="utf-8"/>
+  <meta name="description" content="Najlepsze kebaby Szympex"/>
+  <title>Kebab Szympex</title>
+  <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="keb.png"/></div>
+<nav>
+<div class="item" onclick="change(this)" onmouseover="cheakIfChecked(this)" onmouseout="off(this)">Strona główna</div>
+<div class="item" onclick="change(this)" onmouseover="cheakIfChecked(this)" onmouseout="off(this)">O nas</div>
+<div class="item" onclick="change(this)" onmouseover="cheakIfChecked(this)" onmouseout="off(this)">Kontakt</div>
+</nav>
+
+</header>
+
+<main>
+  <menu>
+  <div class="element">
+  <div class="name">MENU</div>
+
+    <div class="items" onclick="change(this)" onmouseover="cheakIfChecked(this)" onmouseout="off(this)">Kebab w bułce</div>
+    <div class="items" onclick="change(this)" onmouseover="cheakIfChecked(this)" onmouseout="off(this)">Kebab w cieście</div>
+    <div class="items" onclick="change(this)" onmouseover="cheakIfChecked(this)" onmouseout="off(this)">Kebab w kubku</div>
+
+  </div>
+  </menu>
+  <section>
+    <div class="title">Kebab w bułce</div>
+    <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat tristique euismod.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut nec euismod metus.
+       Suspendisse potenti. Sed venenatis nulla in leo sollicitudin maximus.
+       In a diam sit amet turpis hendrerit dictum nec non enim. Donec pellentesque egestas dapibus.
+        Praesent at magna eget ex.</div>
+  </section>
+</main>
+
+<article>
+<div class="picture"><img src="keb2.jpg"/></div>
+<aside>
+<div class="order">
+     Złóż zamówienie
+     <section>
+  <div class="size">
+   <div class="sitem" onclick="sizeChange(this)">Mały</div>
+   <div class="sitem" onclick="sizeChange(this)">Duży</div>
+   <div class="sitem" onclick="sizeChange(this)">Ogromny</div>
+  </div>
+  <div class="data">
+   <div class="ulica"><span>*Ulica:</span><input type="text"></div>
+   <div class="dom"><span>*Nr. domu/lokalu:</span><input type="text"></div>
+   <div class="mieszk"><span>&nbsp;&nbsp;Nr. mieszkania:</span><input type="text"></div>
+   <div class="tel"><span>*Nr. telefonu:</span><input type="text"></div>
+   <div class="bt"><input type="button" value="Zamów"></div>
+
+  </div>
+
+
+
+</div>
+
+
+<div class="opinia">Zostaw Opinię</br>
+  <textarea></textarea>
+
+  <div class="bt"><input type="button" value="Wyślij"></div>
+</div>
+
+</aside>
+</article>
+
+<footer>Made in colab by Jan Fiołka & Oktawian Majerczak </br> &copy; All rights reserved</footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

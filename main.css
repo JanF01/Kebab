@@ -1,0 +1,403 @@
+body{
+  margin: 0 auto;
+  height:100vh;
+  width:100%;
+  font-family:"Titillium Web",Verdana;
+}
+header{
+  height:12%;
+  width:100%;
+  margin-bottom:24%;
+  background-color:#ffb01f;
+  display:flex;
+  align-items:center;
+  box-shadow:0px 0.5em 5em -2em #000;
+  position:fixed;
+  top:0;
+  font-size:100%;
+  z-index:10;
+    transition:all 0.5s;
+}
+.logo{
+  flex:32;
+  padding-left:3%;
+  display:flex;
+  align-items:center;
+  transition:all 0.5s;
+}
+nav{
+  flex:68;
+  display:flex;
+  align-items:center;
+  font-size:270%;
+  height:100%;
+}
+nav>.item{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  cursor:pointer;
+  height:100%;
+  transition:all 0.3s;
+}
+
+main{
+  width:100%;
+  height:88.5%;
+  margin-top:5.5%;
+  background-image:url("https://coolinopizza.pl/wp-content/uploads/2016/02/kebab_bydgoszcz.jpg");
+  background-size:120%;
+  background-position:center;
+  display:flex;
+  align-items:center;
+}
+main>menu{
+  flex:30;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+main>menu .element{
+  padding-top:5%;
+  width:90%;
+  height:87%;
+  background-color:rgb(0,0,0,0.7);
+  color:white;
+  font-size:280%;
+  -moz-border-radius:0.5em;
+  -webkit-border-radius:0.5em;
+  -ms-border-radius:0.5em;
+  border-radius:0.5em;
+}
+main>menu>.element>.name{
+  font-size:110%;
+  width:100%;
+  text-align:center;
+  margin-bottom:-2%;
+}
+main>menu>.element>.items{
+  margin-top:13%;
+  padding:5% 0% 5% 0%;
+  width:100%;
+  text-align:center;
+  vertical-align:center;
+  cursor:pointer;
+  transition:all 0.3s;
+}
+
+main>section{
+  flex:70;
+  text-align:center;
+  height:90%;
+  padding:5% 0% 5% 0%;
+}
+main>section>.title{
+  width:40%;
+  height:10%;
+  background-color:#ffb01f;
+  margin:0 auto;
+  border-color:white;
+  border-style:solid;
+  border-width:0.1em;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:300%;
+  letter-spacing:0.02em;
+  box-shadow:0.1em 0px 0.5em 0px white;
+  -moz-border-radius:0.1em;
+  -webkit-border-radius:0.1em;
+  -ms-border-radius:0.1em;
+  border-radius:0.1em;
+  text-shadow:0px 0px 0.01em black;
+}
+main>section>.info{
+  width:64%;
+  height:60%;
+  background-color:#ffb01f;
+  margin:0 auto;
+  margin-top:6%;
+  -moz-border-radius:0.3em;
+  -webkit-border-radius:0.3em;
+  -ms-border-radius:0.3em;
+  border-radius:0.3em;
+  font-size:220%;
+  padding:3%;
+  color:white;
+  text-align:justify;
+    text-shadow:0px 0em 1em black;
+}
+
+article{
+  width:100%;
+  height:82%;
+  display:flex;
+  align-items:center;
+}
+
+article>.picture{
+  flex:55;
+  height:100%;
+  z-index:1;
+  overflow:hidden;
+}
+article>.picture img{
+  width:110%;
+  z-index:1;
+}
+
+article>aside{
+  flex:45;
+  height:100%;
+  background:linear-gradient(to bottom,#893c00,#ba8c04);
+}
+
+article>aside .order{
+  width:85%;
+  height:47.5%;
+  padding-top:1%;
+  text-align:center;
+  background-color:rgb(0,0,0,0.7);
+  -moz-border-radius:0.3em;
+  -webkit-border-radius:0.3em;
+  -ms-border-radius:0.3em;
+  border-radius:0.3em;
+  font-size:200%;
+  margin:0 auto;
+    margin-top:6%;
+    box-shadow:2px 3px 0.4em 0em #000;
+    color:white;
+}
+article>aside .opinia{
+  width:85%;
+  height:31%;
+    padding-top:1%;
+  text-align:center;
+  background-color:rgb(0,0,0,0.6);
+  -moz-border-radius:0.3em;
+  -webkit-border-radius:0.3em;
+  -ms-border-radius:0.3em;
+  border-radius:0.3em;
+  font-size:200%;
+  margin:0 auto;
+    margin-top:5%;
+    box-shadow:2px 3px 0.4em 0em #000;
+    color:white;
+}
+article>aside>.order>section{
+  width:100;
+  display:flex;
+  height:90%;
+  }
+article>aside>.order .size{
+  flex:40;
+  height:100%;
+}
+.size>.sitem{
+  height:25%;
+  width:78%;
+  margin:0 auto;
+  margin-top:4%;
+  padding:1% 0% 1% 0%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:136%;
+  cursor:pointer;
+  border:none;
+  background:none;
+}
+article>aside>.order .data{
+  flex:60;
+  height:90%;
+  display:flex;
+  flex-direction:column;
+  margin-top:3%;
+  padding-right:4%;
+}
+article>aside>.order>section>.data div{
+  flex:1;
+  display:flex;
+  margin-top:1%;
+  font-size:90%;
+}
+article>aside>.order>section>.data>div>input[type=text]{
+  border:none;
+  outline:none;
+  height:58%;
+  font-size:120%;
+  width:50%;
+  margin-top:1%;
+  color:black;
+  background-color:rgb(255,255,255,0.4);
+padding-top:2%;
+
+}
+.data>.ulica>span{
+  flex:15;
+  text-align:left;
+}
+.data>.ulica>input{
+  flex:85;
+  margin-left:2%;
+}
+.data>.dom>span{
+  flex:52;
+  text-align:left;
+}
+.data>.dom>input{
+  flex:48;
+  margin-left:2%;
+}
+.data>.mieszk>span{
+  flex:40;
+  text-align:left;
+}
+.data>.miesz>input{
+  flex:60;
+  margin-left:1%;
+}
+.data>.tel>span{
+  flex:39;
+  text-align:left;
+}
+.data>.tel>input{
+  flex:61;
+  margin-left:2%;
+}
+
+.data>.bt{
+  display:flex;
+  justify-content:flex-end;
+}
+.data input[type=button]{
+  display:flex;
+  justify-content:flex-end;
+  font-size:100%;
+  width:46%;
+  height:83%;
+  border:none;
+  outline:none;
+  background-color:rgb(0,0,0,0.4);
+  color:white;
+  font-family:"Titillium Web";
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  -moz-border-radius:0.3em;
+  -webkit-border-radius:0.3em;
+  -ms-border-radius:0.3em;
+  border-radius:0.3em;
+  cursor:pointer;
+  transition:all 0.3s;
+}
+.data input[type=button]:hover{
+  transform:scale(1.2);
+}
+
+.opinia>textarea{
+  width:92%;
+  margin-top:1%;
+  height:42%;
+  border:none;
+  background-color:rgb(0,0,0,0.4);
+  outline:none;
+  font-size:95%;
+  color:white;
+  padding:1.5%;
+}
+.opinia>.bt{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  width:96%;
+}
+.opinia>.bt>input[type=button]{
+  font-size:90%;
+  width:27%;
+  height:83%;
+  border:none;
+  outline:none;
+  background-color:rgb(0,0,0,0.4);
+  color:white;
+  font-family:"Titillium Web";
+  -moz-border-radius:0.3em;
+  -webkit-border-radius:0.3em;
+  -ms-border-radius:0.3em;
+  border-radius:0.3em;
+  cursor:pointer;
+    transition:all 0.3s;
+}
+.opinia>.bt>input[type=button]:hover{
+  transform:scale(1.2);
+}
+
+
+footer{
+  z-index:2;
+  height:6%;
+  background-color:#ffb01f;
+  text-align:right;
+  color:white;
+  padding:1em;
+  font-size:140%;
+}
+
+
+
+@media screen and (max-width:2400px){
+  body{
+    font-size:125%;
+  }
+}
+@media screen and (max-width:2300px){
+  body{
+    font-size:110%;
+  }
+}
+@media screen and (max-width:2100px){
+  body{
+    font-size:100%;
+  }
+}
+@media screen and (max-width:1900px){
+  body{
+    font-size:90%;
+  }
+}
+@media screen and (max-width:1700px){
+  body{
+    font-size:80%;
+  }
+  .logo>img{
+    width:30%;
+  }
+}
+@media screen and (max-width:1500px){
+  body{
+    font-size:65%;
+  }
+  .logo>img{
+    width:30%;
+  }
+}
+@media screen and (max-width:1200px){
+  body{
+    font-size:55%;
+  }
+  .logo>img{
+    width:30%;
+  }
+}
+@media screen and (max-width:1000px){
+  body{
+    font-size:47%;
+  }
+  .logo>img{
+    width:30%;
+  }
+}
